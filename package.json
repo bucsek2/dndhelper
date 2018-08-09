@@ -1,0 +1,80 @@
+{
+  "name": "dndhelper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "build": "better-npm-run build",
+    "build:dev": "better-npm-run build",
+    "build:prod": "better-npm-run build:prod",
+    "start": "better-npm-run start",
+    "start:dev": "better-npm-run start",
+    "start:prod": "better-npm-run start:prod"
+  },
+  "betterScripts": {
+    "build": {
+      "command": "babel-node ./node_modules/.bin/webpack --config config/webpack.dev.config.js",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    "build:prod": {
+      "command": "babel-node ./node_modules/.bin/webpack --config config/webpack.prod.config.js",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "start": {
+      "command": "babel-node ./node_modules/.bin/webpack-dev-server --config config/webpack.dev.config.js",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    "start:prod": {
+      "command": "babel-node ./node_modules/.bin/webpack-dev-server --config config/webpack.prod.config.js",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bucsek2/dndhelper.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bucsek2/dndhelper/issues"
+  },
+  "homepage": "https://github.com/bucsek2/dndhelper#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "better-npm-run": "^0.1.1",
+    "html-webpack-harddisk-plugin": "^0.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.11.1",
+    "react-hot-loader": "^4.3.4",
+    "rimraf": "^2.6.2",
+    "source-map-loader": "^0.2.3",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "@types/react": "^16.4.8",
+    "@types/react-dom": "^16.0.7",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
