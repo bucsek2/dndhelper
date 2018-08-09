@@ -42,12 +42,12 @@
     "type": "git",
     "url": "git+https://github.com/bucsek2/dndhelper.git"
   },
-  "author": "",
+  "author": "Gyorgy Bucsek - gyorgy.bucsek@gmail.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bucsek2/dndhelper/issues"
   },
-  "homepage": "https://github.com/bucsek2/dndhelper#readme",
+  "homepage": "https://dnd-tools-b9c08.firebaseapp.com/",
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.0",
     "babel-cli": "^6.26.0",
