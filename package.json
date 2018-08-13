@@ -74,6 +74,7 @@
   "dependencies": {
     "@types/react": "^16.4.8",
     "@types/react-dom": "^16.0.7",
+    "@types/uuid": "^3.4.3",
     "classnames": "^2.2.6",
     "css-loader": "^1.0.0",
     "file-loader": "^1.1.11",
@@ -87,6 +88,7 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
     "svg-loader": "0.0.2",
-    "url-loader": "^1.0.1"
+    "url-loader": "^1.0.1",
+    "uuid": "^3.3.2"
   }
 }

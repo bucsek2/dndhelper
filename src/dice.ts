@@ -1,4 +1,4 @@
-module Dice {
+export module Dice {
     export function d20(): number {
         return getRndInteger(1, 20);
     }

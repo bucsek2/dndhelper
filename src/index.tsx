@@ -5,7 +5,9 @@ import 'primereact/resources/themes/omega/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 
+import { UnderdarkEncounter } from "./components/underdarkEncounter/underdarkEncounter";
+
 ReactDOM.render(
-    <div>Hello World</div>,
+    <UnderdarkEncounter />,
     document.getElementById("root")
 );
